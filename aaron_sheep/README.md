@@ -6,8 +6,7 @@ This repo contains the Aaron Koblin 10K sheep dataset, a set of crowdsourced dra
 
 More information about this dataset at the original project pages:
 
-http://www.aaronkoblin.com/project/the-sheep-market/
-
+http://www.aaronkoblin.com/project/the-sheep-market/<br/>
 http://www.aaronkoblin.com/work/thesheepmarket/
 
 Aaron Koblin provided the original raw data, in the two `.zip` files, along with the processing `.pde` script for loading and rendering the original raw data.  The `.zip` files must be unzipped and placed into a subdirectory called `sheepTxts` for the `.pde` script to run.
