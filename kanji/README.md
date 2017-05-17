@@ -1,4 +1,4 @@
-# KangiVG 10K Dataset
+# KanjiVG 10K Dataset
 
 ![samples](https://cdn.rawgit.com/hardmaru/sketch-rnn/master/example/short_kanji_sample.svg)
 
