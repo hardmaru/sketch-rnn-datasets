@@ -1,6 +1,6 @@
 # Sketch-RNN Datasets
 
-This repo contains a set of optional, extra datasets for training `sketch-rnn`, a generative model for vector sketches.  You can read more about the model by reading this [blog post](https://research.googleblog.com/2017/04/teaching-machines-to-draw.html) or the [paper](https://arxiv.org/abs/1704.03477).  Although the datasets had been created in the format customized for training `sketch-rnn`, it can, and should be used for any future research for vector image modelling.
+This repo contains a set of optional, extra datasets for training `sketch-rnn`, a generative model for vector sketches.  You can learn more about the model by reading this [blog post](https://research.googleblog.com/2017/04/teaching-machines-to-draw.html) or the [paper](https://arxiv.org/abs/1704.03477).  Although the datasets had been created in the format customized for training `sketch-rnn`, it can, and should be used for any future research for vector image modelling.
 
 So far we have organized 3 datasets:
 
