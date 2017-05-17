@@ -2,7 +2,7 @@
 
 ![samples](https://cdn.rawgit.com/hardmaru/sketch-rnn/master/example/aaron_sheep_sample.svg)
 
-This repo contains the Aaron Koblin 10K sheep dataset, a set of crowdsourced drawings of sheep.
+This directory contains the Aaron Koblin 10K sheep dataset, a set of crowdsourced drawings of sheep.
 
 More information about this dataset at the original project pages:
 
