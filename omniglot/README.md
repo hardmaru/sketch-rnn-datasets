@@ -1,4 +1,4 @@
-# Vector Omniglot Dataset
+# Omniglot Dataset
 
 ![samples](https://cdn.rawgit.com/hardmaru/sketch-rnn/master/example/omniglot_sample.svg)
 
