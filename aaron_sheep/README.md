@@ -1,4 +1,4 @@
-# Aaron Koblin 10K Sheep Dataset
+# Aaron Koblin Sheep Dataset
 
 ![samples](https://cdn.rawgit.com/hardmaru/sketch-rnn/master/example/aaron_sheep_sample.svg)
 
