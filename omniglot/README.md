@@ -6,10 +6,10 @@ This directory contains a vector dataset of symbols, derived from Brenden Lake's
 
 # Citation
 
-Please cite this dataset according to the instructions specified in the original [omniglot repo](https://github.com/brendenlake/omniglot).
+Please cite this dataset according to the instructions specified in the original [Omniglot repo](https://github.com/brendenlake/omniglot).
 
 # License
 
 Copyright © 2015 Brenden Lake
 
-The license for this dataset mirrors the LICENSE specified in the original [omniglot repo](https://github.com/brendenlake/omniglot).
+The license for this dataset mirrors the LICENSE specified in the original [Omniglot repo](https://github.com/brendenlake/omniglot).
