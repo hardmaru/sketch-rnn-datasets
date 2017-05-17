@@ -16,7 +16,7 @@ In each dataset, each sample is stored as list of coordinate offsets: ∆x, ∆y
 
 To illustrate this data format, in the figure above is a drawing of a turtle, sketched by the author.  The turtle is represented as a sequence of (∆x, ∆y, binary pen state) points and in rendered form.  In the rendered sketch, the line color corresponds to the sequential stroke ordering.
 
-In the datasets, each example in the list of examples is represented as a `np.array` with `np.int16` datatypes, and can be loaded using the following command in a Jupyter notebook:
+In the datasets, each example in the list of examples is represented as a `np.array` with `np.int16` datatypes, and can be easily loaded using the following commands in a Jupyter notebook:
 
 ```python
 filename = "sketch-rnn-datasets/kanji/short_kanji.npz"
@@ -26,19 +26,19 @@ valid_set = load_data['valid']
 test_set = load_data['test']
 
 print len(train_set)
-  Output -> 10000
+  Output: 10000
 print len(valid_set)
-  Output -> 600
+  Output: 600
 print len(test_set)
-  Output -> 500
+  Output: 500
   
-# draw a random example:
+# draw a random example (see draw_strokes.py)
 draw_strokes(random.choice(train_set))
 ```
 
-For some of the datasets, we also performed simple stroke simplification to preprocess the data, called [Ramer-Douglas-Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm).  We choose the `epsilon` parameter to be a value between 0.2 to 3.0, depending on how aggressively we want to simply the lines.
+For some of the datasets, we also performed simple stroke simplification to preprocess the data, using the [Ramer-Douglas-Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm)(RDP) algorithm.  We choose the `epsilon` parameter to be a value between 0.2 to 3.0, depending on how aggressively we want to simply the lines.
 
-If you have a large set of simple SVG images, and want to construct a similar dataset, there are some available [libraries](https://pypi.python.org/pypi/svg.path) to convert subsets of SVGs into line segments, and you can then apply RDP on the line segments before converting the data to *stroke-3* format.  There is some easy-to-use open source code for applying this algorithm [here](https://github.com/fhirschmann/rdp).
+If you have a large set of simple SVG images, and want to construct a similar dataset, there are some available [libraries](https://pypi.python.org/pypi/svg.path) to convert subsets of SVGs into line segments.  You can then apply RDP on the line segments before converting the data to *stroke-3* format.  There is some easy-to-use open source code for applying this algorithm [here](https://github.com/fhirschmann/rdp).
 
 # License
 
