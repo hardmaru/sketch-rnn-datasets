@@ -14,7 +14,7 @@ In each dataset, each sample is stored as list of coordinate offsets: ∆x, ∆y
 
 ![Example Training Sketche](https://cdn.rawgit.com/hardmaru/sketch-rnn/master/example/data_format.svg)
 
-To illustrate this data format, in the figure above is a drawing of a turtle, sketched by the author.  The turtle is represented as a sequence of (∆x, ∆y, binary pen state) points and in rendered form.  In the rendered sketch, the line color corresponds to the sequential stroke ordering.
+To illustrate this data format, in the figure above is a drawing of a turtle, sketched by the author.  This turtle is represented as a sequence of (∆x, ∆y, binary pen state) points.  In the rendered form, the line color corresponds to the sequential stroke ordering to illustrate the ordering.
 
 In the datasets, each example in the list of examples is represented as a `np.array` with `np.int16` datatypes, and can be easily loaded using the following commands in a Jupyter notebook:
 
