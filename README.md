@@ -8,7 +8,7 @@ We have organized 3 datasets in this repo:
 * [Kanji Stroke Data](https://github.com/hardmaru/sketch-rnn-datasets/tree/master/kanji)
 * [Omniglot Stroke Data](https://github.com/hardmaru/sketch-rnn-datasets/tree/master/omniglot)
 
-# *Stroke-3* Format
+# *Stroke-3* Vector Format
 
 In each dataset, each sample is stored as list of coordinate offsets: ∆x, ∆y, and a binary value representing whether the pen is lifted away from the paper.  This format, we refer to as *stroke-3*, is described in Alex Graves' [paper](https://arxiv.org/abs/1308.0850) on sequence generation.  Note that the data format described in the `sketch-rnn` paper has 5 elements (*stroke-5* format), and we need to perform live conversion of the data to the *stroke-5* format during mini-batch construction.
 
