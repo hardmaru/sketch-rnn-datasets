@@ -36,7 +36,7 @@ print len(test_set)
 draw_strokes(random.choice(train_set))
 ```
 
-For some of the datasets, we also performed simple stroke simplification to preprocess the data, using the [Ramer-Douglas-Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm) (RDP) algorithm.  We choose the `epsilon` parameter to be a value between 0.2 to 3.0, depending on how aggressively we want to simply the lines.
+For some of the datasets, we also performed simple stroke simplification to preprocess the data, using the [Ramer-Douglas-Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm) (RDP) algorithm.  We choose the `epsilon` parameter to be a value between 1.0 to 3.0, depending on how aggressively we want to simply the lines.
 
 If you have a large set of simple SVG images, and want to construct a similar dataset, there are some available [libraries](https://pypi.python.org/pypi/svg.path) to convert subsets of SVGs into line segments.  You can then apply RDP on the line segments before converting the data to *stroke-3* format.  There is some easy-to-use open source code for applying this algorithm [here](https://github.com/fhirschmann/rdp).
 
