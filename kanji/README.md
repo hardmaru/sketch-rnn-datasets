@@ -6,6 +6,15 @@ This directory contains a vector dataset of Kanji characters used in the machine
 
 We have converted and simplified the original `.svg` each stroke as a short polyline sequence, and stored the data into the *stroke-3* format for training `sketch-rnn`.  The train/validation/test split sizes are 10000/600/500 respectively.
 
+# Files
+
+| filename  | max length | description  |
+|---|---|---|
+| short_kanji.npz  | 88  | original dataset used in mentioned blog post  |
+| kanji.rdp25.npz (recommended)  | 133  | rebuilt dataset using [RDP](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm) line simplification with epsilon=0.25 |
+| kanji.rdp100.npz  | 80  | RDP with epsilon=1.0  |
+| kanji.rdp200.npz  | 70  | RDP with epsilon=2.0 (same as [QuickDraw](https://quickdraw.withgoogle.com/data) dataset)  |
+
 # License
 
 KanjiVG is Copyright © 2009-2015 Ulrich Apel
